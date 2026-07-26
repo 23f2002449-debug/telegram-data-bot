@@ -1,0 +1,14 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-telegram-bot==22.3
+openai==1.98.0
+pandas==2.3.1
+numpy==2.3.2
+requests==2.32.4
+python-dotenv==1.1.1
+httpx==0.28.1
+openpyxl==3.1.5
+xlrd==2.0.2
+beautifulsoup4==4.13.4
+lxml==6.0.0
+aiofiles==24.1.0
