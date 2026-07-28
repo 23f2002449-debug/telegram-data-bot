@@ -16,8 +16,11 @@ from duckduckgo_search import DDGS
 LOG_DIR = "logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+client = OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1",
+)
+MODEL = os.getenv("OPENAI_MODEL", "llama-3.3-70b-versatile")
 
 MAX_STEPS = 10
 
